@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Health Agent</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f7f6;
+        }
+        .container {
+            text-align: center;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Health AI Voice Assistant</h2>
+        <p>Click below to start your voice check-in call.</p>
+        
+        <!-- Sarvam Widget Script Integration -->
+        <script src="https://unpkg.com/sarvam-convai-embed"></script>
+        <sarvam-widget
+          api-key="YOUR_ACTUAL_SARVAM_API_KEY"
+          app-id="Conversatio-82468869-4918"
+          org-id="01a143f7-91d6-709b-b9f8-a5e0060b2a82"
+          workspace-id="01a143f7-91de-7931-b7f2-3f4e36386e2d"
+          user-id="user_123"
+          button-text="Begin call"
+          interaction-type="call"
+          background-color="#ffffff"
+          foreground-color="#ebebeb50"
+          accent-color="#000000"
+        ></sarvam-widget>
+    </div>
+
+</body>
+</html>
